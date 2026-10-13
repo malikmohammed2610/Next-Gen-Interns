@@ -1,0 +1,4 @@
+<%- include("../partials/head", { title: title }) %><%- include("../partials/header") %>
+<main class="container form-page"><section class="form-card"><p class="eyebrow">RESTRICTED AREA</p><h1>Admin sign-in</h1><p class="muted">Use an administrator account provisioned securely in the database. Public admin registration is intentionally disabled.</p>
+<form method="post" action="/login" class="stack-form"><label>Email<input type="email" name="email" required autocomplete="username"></label><label>Password<input type="password" name="password" required autocomplete="current-password"></label><button class="button button-full" type="submit">Sign in</button></form></section></main>
+<%- include("../partials/footer") %><%- include("../partials/scripts") %>

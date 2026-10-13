@@ -1,0 +1,2 @@
+<%- include("../partials/head", { title: title }) %><%- include("../partials/header") %>
+<main class="container form-page"><section class="form-card"><p class="eyebrow">CHECK YOUR DETAILS</p><h1>Please review your information.</h1><ul><% (errors || []).forEach(function(e) { %><li><%= e.msg %></li><% }) %></ul><a class="button" href="javascript:history.back()">Go back</a></section></main><%- include("../partials/footer") %><%- include("../partials/scripts") %>

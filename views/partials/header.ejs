@@ -1,0 +1,18 @@
+<header class="site-header">
+  <a class="brand" href="/" aria-label="Next Gen Interns home">
+    <span class="brand-mark">N</span><span>Next Gen <b>Interns</b></span>
+  </a>
+  <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  <nav class="main-nav">
+    <a href="/internships">Internships</a>
+    <a href="/plans">Plans</a>
+    <% if (currentUser) { %>
+      <a href="/dashboard">Dashboard</a>
+      <% if (currentUser.role === "admin") { %><a href="/admin">Admin</a><% } %>
+      <form class="inline-form" action="/logout" method="post"><button class="nav-link-button" type="submit">Log out</button></form>
+    <% } else { %>
+      <a href="/login">Log in</a>
+      <a class="button button-small" href="/register">Get started</a>
+    <% } %>
+  </nav>
+</header>

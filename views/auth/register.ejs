@@ -1,0 +1,9 @@
+<%- include("../partials/head", { title: title }) %><%- include("../partials/header") %>
+<main class="container form-page"><section class="form-card"><p class="eyebrow">CREATE YOUR ACCOUNT</p><h1>Your next chapter starts here.</h1><p class="muted">Register to apply to published internships and track your progress.</p>
+<form method="post" action="/register" class="stack-form">
+<label>Full name<input name="fullName" autocomplete="name" required maxlength="120"></label>
+<label>Email address<input type="email" name="email" autocomplete="email" required maxlength="190"></label>
+<label>Password<input type="password" name="password" autocomplete="new-password" required minlength="8"><small>Use at least 8 characters.</small></label>
+<button class="button button-full" type="submit">Create account</button>
+</form><p class="form-foot">Already registered? <a href="/login">Log in</a></p></section></main>
+<%- include("../partials/footer") %><%- include("../partials/scripts") %>

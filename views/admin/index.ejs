@@ -1,0 +1,5 @@
+<%- include("../partials/head", { title: title }) %><%- include("../partials/header") %>
+<main class="container content-page"><p class="eyebrow">ADMINISTRATION</p><h1>Control <span>center.</span></h1><p class="muted">Review platform activity, internship submissions, and recorded payment status.</p>
+<div class="stats-grid"><article class="stat-card"><small>Registered users</small><strong><%= stats.users %></strong></article><article class="stat-card"><small>Pending internships</small><strong><%= stats.pending %></strong></article><article class="stat-card"><small>Published internships</small><strong><%= stats.published %></strong></article><article class="stat-card"><small>Captured payments</small><strong><%= stats.payments %></strong></article></div>
+<div class="admin-links"><a class="feature-card" href="/admin/internships"><h3>Manage internships ↗</h3><p>Review submissions and change publication status.</p></a><a class="feature-card" href="/admin/payments"><h3>Payment records ↗</h3><p>Review provider-confirmed payment records.</p></a></div></main>
+<%- include("../partials/footer") %><%- include("../partials/scripts") %>

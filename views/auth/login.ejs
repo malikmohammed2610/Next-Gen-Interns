@@ -1,0 +1,8 @@
+<%- include("../partials/head", { title: title }) %><%- include("../partials/header") %>
+<main class="container form-page"><section class="form-card"><p class="eyebrow">WELCOME BACK</p><h1>Pick up where you left off.</h1>
+<form method="post" action="/login" class="stack-form">
+<label>Email address<input type="email" name="email" autocomplete="email" required></label>
+<label>Password<input type="password" name="password" autocomplete="current-password" required></label>
+<button class="button button-full" type="submit">Log in</button>
+</form><p class="form-foot">New to the platform? <a href="/register">Create an account</a></p></section></main>
+<%- include("../partials/footer") %><%- include("../partials/scripts") %>
